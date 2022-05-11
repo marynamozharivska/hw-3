@@ -15,26 +15,27 @@
      <!-- header-->  
  
     <header>
-        <nav class="container main-nav ">
+        <div class="container">   
+        <nav class="main-nav">
             <a href="" lang="en" class="logo"><span class="accent">Web</span>Studio </a>
             <ul class="site-nav list"> 
                 <li class="item"><a class="site-nav-link current" href="">Студия</a></li>
                 <li class="item"><a class="site-nav-link" href="./portfolio.html">Портфолио</a></li> 
                 <li class="item"><a class="site-nav-link" href="" >Контакты</a></li>
             </ul>
-        
+        </nav>
             <ul class="contact-nav list">
                 <li class="item"><a class="contact-nav-link" href="emailto:info@devstudio.com" >info@devstudio.com </a></li>
                 <li class="item"><a class="contact-nav-link" href="tel:+380961111111" >+38 096 111 11 11</a></li>
-            </ul> 
-        </nav>
+            </ul>      
+        </div>
     </header>
       
     <main>
         <!--Hero -->
     <section class="hero">
         <div class="container">
-        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+        <h1 class="hero-title">Эффективные решения<br>для вашего бизнеса</h1>
         <button class="hero-button">Заказать услугу</button>
         </div>
     </section>
@@ -45,21 +46,29 @@
             <div class="container">   
         <h2 class="visually-hidden">Преимущество студии </h2>
             <ul class="feature-list list">
-                <li>
-                    <h3 class="feature-title">Внимание к деталям</h3>
-                    <p class="feature-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-                </li>
-                <li>
+                <li class="item">
+                    <div class="featre-descripton">
+                        <h3 class="feature-title">Внимание к деталям</h3>
+                        <p class="feature-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                    </div>
+                   </li>
+                <li class="item">
+                    <div class="featre-descripton">
                     <h3 class="feature-title">Пунктуальность</h3>
                     <p class="feature-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                </div>
                 </li>
-                <li>
+                <li class="item">
+                    <div class="featre-descripton">
                     <h3 class="feature-title">Планирование</h3>
                     <p class="feature-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                </div>
                 </li>
-                <li>
+                <li class="item">
+                    <div class="featre-descripton">
                     <h3 class="feature-title">Современные технологии</h3>
                     <p class="feature-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                </div>
                 </li>
             </ul>
             </div>
@@ -70,13 +79,13 @@
         <h2 class="section-title">Чем мы занимаемся</h2>
         <ul class="list work-list">
             <li class="item">
-                <img src="./images/img-1.jpg" alt="Работа с планшетом и клавиатурою" width="370" height="294">
+                <img class="img" src="./images/img-1.jpg" alt="Работа с планшетом и клавиатурою" width="370" height="294">
             </li>
             <li class="item">
-                <img src="./images/img-2.jpg" alt="Работа с ноутбуком и телефоном" width="370" height="294" >
+                <img class="img" src="./images/img-2.jpg" alt="Работа с ноутбуком и телефоном" width="370" height="294" >
             </li>
             <li class="item">
-                <img src="./images/img-3.jpg" alt="Работа с планшетом" width="370" height="294" >
+                <img class="img" src="./images/img-3.jpg" alt="Работа с планшетом" width="370" height="294" >
             </li>
         </ul>
     </div>
@@ -84,29 +93,37 @@
 
     <!--staff -->
 
-    <section class="section">
+    <section class="section staff">
         <div class="container">
             <h2 class="section-title">Наша команда</h2>
             <ul class="staff-list list">
                 <li class="item">
                     <img src="./images/img-4.jpg" alt="Игорь Демьяненко" width="270" height="260">
+                    <div class="staff-info">
                     <h3 class="staff-title">Игорь Демьяненко</h3>
                     <p class="staff-prof" lang="en">Product Designer</p>
+                    </div>  
                 </li>
                 <li class="item">
                     <img src="./images/img-5.jpg" alt="Ольга Репина" width="270" height="260">
+                    <div class="staff-info">
                     <h3 class="staff-title">Ольга Репина</h3>
                     <p class="staff-prof" lang="en">Frontend Developer</p>
+                </div>
                 </li>
                 <li class="item">
                     <img src="./images/img-6.jpg" alt="Николай Тарасов" width="270" height="260">
+                    <div class="staff-info">
                     <h3 class="staff-title">Николай Тарасов</h3>
                     <p class="staff-prof" lang="en">Marketing</p>
+                    </div>
                 </li>
                 <li class="item">
                     <img src="./images/img-7.jpg" alt="Михаил Ермаков" width="270" height="260">
+                    <div class="staff-info">
                     <h3 class="staff-title">Михаил Ермаков</h3>
                     <p class="staff-prof" lang="en">UI Designer</p>
+                </div>
                 </li>
             </ul>
         </div>  
