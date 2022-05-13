@@ -3,6 +3,7 @@
     --title-text-color:#212121;
     --white-color: #FFFFFF;
     --accent-color:#2196F3;
+    --primary-background-color: #FFFFFF;
     --secondary-background-color: #F5F4FA;
 }
 
@@ -12,10 +13,10 @@ html{
 
 body{
     color:var(--primary-text-color);
-    background-color: #FFFFFF;
-    font-family: Roboto, sans-serif;
-    
+    background-color:var(--primary-background-color);
+    font-family: Roboto, sans-serif;   
 }
+
 .list{
     list-style: none;
     margin-top: 0;
@@ -32,16 +33,20 @@ body{
 }
 h1, h2, h3, p, ul{
     margin: 0;
+    padding:0;
 }
 
 /* header */
+.header .container{
+    border-bottom: 1px solid #ECECEC; 
+}
 
+.header .container, 
 .main-nav,
 .contact-nav,
 .site-nav{
     display:flex;
     align-items: center;
-    border-bottom: 1px solid #ECECEC;
 }
 
 .logo {
@@ -56,7 +61,6 @@ h1, h2, h3, p, ul{
 .accent{
     color:var(--accent-color);
 }
-
 
  /* cтілізація site-nav */
 .site-nav {
@@ -125,7 +129,6 @@ h1, h2, h3, p, ul{
     margin-top: 0px; 
     margin-bottom: 30px;
  
-
     color:var(--white-color);
     font-weight: 900;
     font-size: 44px;
@@ -173,12 +176,12 @@ h1, h2, h3, p, ul{
     padding: 0;
     clip: rect(0 0 0 0);
     overflow: hidden;
-  }
+}
 .feature-list{
     display: flex;  
 }
 
-.item .featre-descripton:not(:last-child){
+.feature-item:not(:last-child){
     margin-right: 30px;
 }
 
@@ -195,8 +198,6 @@ h1, h2, h3, p, ul{
 }
 
 .feature-list .feature-text{
-    margin-right: 30px;
- 
     color:var(--primary-text-color); 
     font-size: 14px;
     line-height: 1.71;
@@ -370,7 +371,7 @@ h1, h2, h3, p, ul{
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    }
+}
 .address-mail, .address-tel{
     text-decoration:none;
     color: rgba(255, 255, 255, 0.6);
